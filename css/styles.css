@@ -1,0 +1,173 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario:#0097a7;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+    --fondo: #f2f6fa;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--fondo);
+}
+
+body {
+    font-size:16px; /* 1rem=10px */
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo span{
+    font-size: 1.5rem;
+}
+
+.navprincipal{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: var(--secundario);
+    font-weight: bold;
+}
+
+nav a{
+    color:var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+.cont{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(heroe.jpg);
+    background-size: cover;
+    padding: 5rem;
+    text-align: center;
+}
+
+.boton{
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--blanco);
+    background-color: var(--secundario);
+    text-decoration: none;  
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+}
+
+main{
+    border-style: ridge;
+    margin: 2rem 5rem;
+    background-color: var(--blanco);
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px;
+    border-radius: 1rem;
+}
+
+main h2{
+    text-align: center;
+}
+.servicios{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.emotes{
+    justify-content: center;
+    background-color: var(--primario);
+    border-radius: 50%; 
+    align-items: center;
+    
+}
+
+
+.diseño{
+    text-align: center;
+    padding: 30px;
+    color: var(--blanco);
+}
+
+.free{
+    text-align: center;
+    color: var(--blanco);
+}
+
+.instituto{
+    display: grid;
+    grid-template-areas: 
+        'sidemenu sidemenu main main'
+        'sidemenu sidemenu main main';
+    justify-content: center;
+}
+
+.icono{
+    grid-area: sidemenu;
+}
+
+.location{
+    text-align: center;
+    font-size: 14px;
+    color: var(--blanco);
+    grid-area: main;
+    text-align: left;
+    margin-top: 4.5rem;
+    margin-bottom: 5rem;
+}
+
+section h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.contacto h4{
+    color: var(--primario);
+    padding-top: 2rem;
+}
+.contacto{
+    text-align: center;
+    border-style: none;
+    border-radius: 1rem;
+    margin: 2rem 63rem;
+    background-color: var(--gris);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+form{
+    font-weight: bold;
+    display: grid;
+    grid-template-areas:
+        'sidemenu sidemenu header header'
+        'main main article article' 
+        'footer footer footer footer';
+}
+
+.campo{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2;
+    gap: 1rem;
+}
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+    grid-column: 1/3;
+}
+
+.enviar{
+    grid-area: footer;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 21rem;
+    margin-right: 21rem;
+    margin-bottom: 1rem;
+}
